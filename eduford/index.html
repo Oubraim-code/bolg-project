@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>blog</title>
+</head>
+<body>
+    <div class="top-header">
+        <a class="logo" href="#">Blog</a>
+        <div class="left-bar">
+            <a  href=""><span class="home">HOME</span></a>
+            <a href="#">BLOGS</a>
+            <a href="">ABOUT US</a>
+        </div>
+    </div>
+    <div class="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <main>
+        <div class="card">
+            <img src="blog.jpg" alt="">
+            <div class="content">
+            <h3>This is the zero card</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime consequuntur harum unde consectetur esse. Aspernatur non harum, sequi minus nulla dolore maiores natus tenetur earum aut atque nobis est dignissimos.</p>
+            </div>
+            <a class="btn" href="#">Read More</a>
+        </div>
+        <div class="card">
+            <img src="blog.jpg" alt="">
+            <div class="content">
+            <h3>This is the first card</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime consequuntur harum unde consectetur esse. Aspernatur non harum, sequi minus nulla dolore maiores natus tenetur earum aut atque nobis est dignissimos.</p>
+            </div>
+            <a class="btn" href="#">Read More</a>
+        </div>
+        <div class="card">
+            <img src="blog.jpg" alt="">
+            <div class="content">
+            <h3>This is the second card</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime consequuntur harum unde consectetur esse. Aspernatur non harum, sequi minus nulla dolore maiores natus tenetur earum aut atque nobis est dignissimos.</p>
+            </div>
+            <a class="btn" href="#">Read More</a>
+
+        </div>
+        <div class="card">
+            <img src="blog.jpg" alt="">
+            <div class="content">
+            <h3>This is the thired card</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime consequuntur harum unde consectetur esse. Aspernatur non harum, sequi minus nulla dolore maiores natus tenetur earum aut atque nobis est dignissimos.</p>
+            </div>
+            <a class="btn" href="#">Read More</a>
+        </div>
+    </main>
+    <script>
+        const hamburger = document.querySelector(".hamburger-menu");
+        const navLinks = document.querySelector(".left-bar");
+    
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("show");
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+* {
+    margin : 0;
+    box-sizing: border-box;
+}
+.top-header {
+    width: 100%;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+
+}
+.logo {
+    text-decoration: none;
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color : #fff;
+    text-shadow: 1px 1px 1px #db7171;
+    padding-left : 20px;
+}
+.left-bar a {
+    margin : 0 5px;
+    transition: 0.4s;
+    border-radius: 4px;
+    padding : 6px 12px;
+    text-decoration: none;
+    color : #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+
+}
+
+.left-bar a:hover {
+    background-color: tomato;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top : 100px;
+    
+}
+.card {
+    width: 325px;
+    height : auto;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px blue;
+    margin : 20px;
+    
+    
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+.content {
+    background-color: #fff;
+    padding: 16px;
+}
+.content h3 {
+    font-size: large;
+    text-align: center;
+    margin-bottom: 8px;
+    font-weight:bold;
+}
+.content p {
+    text-align: left ;
+    
+}
+.card .btn {
+    display: inline-block;
+    width : max-content ;
+    height: auto;
+    margin : 6px 10px;
+        padding: 8px 16px;
+    text-decoration: none;
+    background-color: rgb(59, 55, 55);
+    border : 1px solid rgb(65, 65, 134);
+    box-shadow: 1px black;
+    border-radius: 4px;
+    color : #fff;
+    
+    
+}
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    right : 5px;
+    top: 10px;
+}
+
+.hamburger-menu span {
+    height: 3px;
+    width: 25px;
+    background-color:white;
+    margin: 4px;
+    transition: 0.3s ease;
+}
+@media (max-width: 730px) {
+    .left-bar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 57px;
+        right: 0;
+        background-color: #333;
+        width: 100%;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .left-bar.show {
+        display: flex;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+}
